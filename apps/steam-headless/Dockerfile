@@ -314,7 +314,9 @@ ENV XIM=fcitx
 ENV XMODIFIERS="@im=fcitx"
 # Enable AppImage execution in containers
 ENV APPIMAGE_EXTRACT_AND_RUN=1
-RUN mkdir -pm755 /etc/apt/preferences.d && echo "Package: firefox*\n\
+# temp workaround to create kwritesettings
+RUN echo "#!/bin/bash\nexit 0" > /usr/local/bin/kwritesettings && chmod a+rx /usr/local/bin/kwritesettings && \
+mkdir -pm755 /etc/apt/preferences.d && echo "Package: firefox*\n\
 Pin: version 1:1snap*\n\
 Pin-Priority: -1" > /etc/apt/preferences.d/firefox-nosnap && \
     mkdir -pm755 /etc/apt/trusted.gpg.d && curl -fsSL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x0AB215679C571D1C8325275B9BDB3D89CE49EC21" | gpg --dearmor -o /etc/apt/trusted.gpg.d/mozillateam-ubuntu-ppa.gpg && \

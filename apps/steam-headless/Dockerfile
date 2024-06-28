@@ -396,6 +396,7 @@ Pin-Priority: -1" > /etc/apt/preferences.d/firefox-nosnap && \
         libkf5kdelibs4support5-bin \
         libkf5khtml-bin \
         libkf5parts-plugins \
+        libkf5config-bin \
         libqt5multimedia5-plugins \
         librsvg2-common \
         media-player-info \

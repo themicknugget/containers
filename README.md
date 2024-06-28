@@ -111,7 +111,6 @@ Container | Channel | Image
 [actions-runner](https://github.com/themicknugget/containers/pkgs/container/actions-runner) | stable | ghcr.io/themicknugget/actions-runner
 [home-assistant](https://github.com/themicknugget/containers/pkgs/container/home-assistant) | stable | ghcr.io/themicknugget/home-assistant
 [steam-headless](https://github.com/themicknugget/containers/pkgs/container/steam-headless) | stable | ghcr.io/themicknugget/steam-headless
-[steam-headless](https://github.com/themicknugget/containers/pkgs/container/steam-headless) | stable | ghcr.io/themicknugget/steam-headless
 
 
 ## Deprecations

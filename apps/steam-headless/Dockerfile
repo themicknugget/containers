@@ -315,7 +315,7 @@ ENV XMODIFIERS="@im=fcitx"
 # Enable AppImage execution in containers
 ENV APPIMAGE_EXTRACT_AND_RUN=1
 # temp workaround to create kwritesettings
-RUN echo "#!/bin/bash\nexit 0" > /usr/local/bin/kwritesettings && chmod a+rx /usr/local/bin/kwritesettings && \
+RUN echo "#!/bin/bash\nexit 0" > /usr/bin/kwritesettings && chmod a+rx /usr/bin/kwritesettings && \
 mkdir -pm755 /etc/apt/preferences.d && echo "Package: firefox*\n\
 Pin: version 1:1snap*\n\
 Pin-Priority: -1" > /etc/apt/preferences.d/firefox-nosnap && \

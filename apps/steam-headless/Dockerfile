@@ -3,7 +3,7 @@
 # file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 # Supported base images: Ubuntu 24.04, 22.04, 20.04
-ARG DISTRIB_RELEASE=24.04
+ARG DISTRIB_RELEASE=26.04
 FROM ubuntu:${DISTRIB_RELEASE}
 ARG DISTRIB_RELEASE
 
